@@ -11,10 +11,12 @@
       var myLatLng = {lat: <%= @place.latitude %>, lng: <%= @place.longitude %>};
 
       var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 13,
+        zoom: 16,
         center: myLatLng
       });
 
+      console.log(map)
+      
       var marker = new google.maps.Marker({
         position: myLatLng,
         map: map,
@@ -23,7 +25,7 @@
     }
 </script>
   <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAh92nySn_yHO-eC5Dt_bBGrFsuaUW7kns&
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC55j0L11pSkaAxZ212P6QVSmJGOkxpiCw&
   callback=initMap">
   </script>
  <div id="map"></div>
