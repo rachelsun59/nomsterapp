@@ -54,4 +54,9 @@ input {
     0 10px 10px rgba(0,0,0,0.22);
 }
 
-
+.invalid-feedback {
+    color: #ff3333;
+    background-color: #FFEEEE;
+    border-radius: 3px;
+    padding: 2px 8px 2px 8px;
+  }
